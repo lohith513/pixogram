@@ -1,0 +1,10 @@
+
+<div class="bg-success" style="height: 900px;">
+    
+    <app-productentry (submit_info) = "addNewProduct($event)"></app-productentry>
+  
+  <hr/>
+    <!-- Show the list : replaced the code with a tag-->
+    <!-- pass the data : products ==> productsList -->
+    <app-productlist [productsList]="products" > </app-productlist>
+  </div>
