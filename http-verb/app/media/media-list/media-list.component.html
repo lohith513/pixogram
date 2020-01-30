@@ -1,0 +1,26 @@
+
+<div>
+    <input type="button" value="ADD" class="btn-primary" (click)="add()" />
+    <hr/>
+    <table class="table">
+      <thead>
+        <th>Sn</th>
+        <th>FILE</th>
+        <th>DESCRIPTION</th>
+        <th>TAG</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let media of media; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{media.file}}</td>
+          <td>{{media.description}}</td>
+          <td>{{product.tag}}</td>
+          <td><input type="button" value="Update" class="btn-primary" (click) = "update(media.id)" /></td>
+          <td><input type="button" value="Delete" class="btn-secondary" (click) = "delete(media.id)"/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

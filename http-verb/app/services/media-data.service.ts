@@ -1,0 +1,49 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Media } from '../model/meida.model';
+
+
+const API_URL = "http://localhost:3000/media";
+
+@Injectable({
+  providedIn: 'root'
+})
+export class MediaDataService {
+
+  constructor(public http : HttpClient) {
+
+   }
+
+getAllmedia(){
+  
+  return this.http.get(API_URL);
+}
+
+
+addNewMedia(media: Media){
+  
+  return this.http.post(API_URL, media);
+}
+
+
+getOneMedia(id:number){
+
+  return this.http.get(API_URL + "/" + id);
+
+}
+
+
+updateMedia(id:number, media : Media){
+  
+  return this.http.put(API_URL + "/" + id, media);
+}
+
+
+deleteMedia(id:number){
+  
+  return this.http.delete(API_URL + "/" + id);
+
+}
+
+}
+

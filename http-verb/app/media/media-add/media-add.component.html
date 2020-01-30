@@ -1,0 +1,19 @@
+
+<div>
+    <h3>media</h3>
+    <div class="row">
+      <div class="col"><label for="">Enter file name</label></div>
+      <div class="col"><input type="text" #txtfile /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Enter description</label></div>
+      <div class="col"><input type="text" #txtdescription /></div>
+    </div><div class="row">
+      <div class="col"><label for="">Describe tag</label></div>
+      <div class="col"><input type="text" #txttag /></div>
+    </div>
+    <div class="row">
+      
+      <div class="col"><input type="button" value="Save" (click)="savemedia(txtfile, txtdescription, txttag)" /></div>
+    </div>
+  </div>
