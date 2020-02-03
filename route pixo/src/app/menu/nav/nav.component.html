@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <a  class="navbar-brand" [routerLink]="['/login']">Login<img src=" assets/pixogram.png " style="background: white" width="100" height="100" class="d-inline-block align-top"        alt  ="pixogram">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav m-auto">
+            <li *ngIf="auth.isUserLoggedIn()" class="nav-item">
+            <a class="nav-item nav-link m-auto" [routerLink]="['/upload']" >Upload Media </a>
+            </li>
+            <li *ngIf="auth.isUserLoggedIn()" class="nav-item">
+            <a class="nav-item nav-link m-auto" [routerLink]="['/mymedia']">My Media</a>
+            </li>
+            <li *ngIf="auth.isUserLoggedIn()" class="nav-item" >
+            <a class="nav-item nav-link m-auto" [routerLink]="['/followers']">Followers/Following</a>
+            </li>
+        </div>
+          <div class="col-3 d-flex flex-column" >
+    <a   [routerLink]="['/account']" class="badge badge-primary bd-highlight p-2 m-auto" >ACCOUNT </a>            
+</div>
+<div  *ngIf="auth.isUserLoggedIn()"class="nav-item">
+    <a class="nav-link btn-primary" [routerLink]="['/logout']">LOGOUT</a>
+  </div>
+    </div>
+
+</nav>
+
