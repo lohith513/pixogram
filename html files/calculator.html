@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    <body> 
+	<div class = title >calculator</div> 
+	
+
+		
+            
+         
+             value1<input type ="number" id="value1" placeholder="Enter value1"><br><br>
+             value2<input type ="number" id="value2" placeholder="Enter value2"><br><br>
+         
+            
+             <input type="button" value="+" onclick="add()"/></td>
+             <input type="button" value="-" onclick="sub()"/></td>
+             <td><input type="button" value="*" onclick="mul()"/></td>
+             <td><input type="button" value="/" onclick="div()"/></td>
+             <td><input type="button" value="c" onclick="clr()"/> </td><br><br>
+            
+         
+        <tr> 
+             
+             <td>Result<input type="text" id="result" placeholder="Result"></td>           
+            </tr>
+        
+            </table> 
+         <script> 
+             
+            function add() 
+            { 
+                var value1 = document.getElementById("value1")
+                var value2 = document.getElementById("value2")
+                var number1 = parseInt(value1.value);
+                var number2 = parseInt(value2.value);
+                document.getElementById("result").value = number1+number2; 
+            } 
+            function sub()
+            {
+                var value1 = document.getElementById("value1")
+                var value2 = document.getElementById("value2")
+                var number1 = parseInt(value1.value);
+                var number2 = parseInt(value2.value);
+                document.getElementById("result").value = number1-number2;
+            }
+            function mul()
+            {
+                var value1 = document.getElementById("value1")
+                var value2 = document.getElementById("value2")
+                var number1 = parseInt(value1.value);
+                var number2 = parseInt(value2.value);
+                document.getElementById("result").value =number1*number2;
+            }
+            function div()
+            {
+                var value1 = document.getElementById("value1")
+                var value2 = document.getElementById("value2")
+                var number1 = parseInt(value1.value);
+                var number2 = parseInt(value2.value);
+                document.getElementById("result").value =(number1/number2);
+            }
+            function clr() 
+		{ 
+			document.getElementById("result").value = "" 
+            document.getElementById("value1").value =""
+            document.getElementById("value2").value =""
+		} 
+           
+        </script> 
+        </html>

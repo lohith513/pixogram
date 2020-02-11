@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form - App</title>
+</head>
+<body>
+
+	<form action="abc.com">  
+		<ul>
+			<li>
+				Enter your name :	<input type="text" name="firstname" required>
+            </li>
+            <li>
+				Enter your name :	<input type="text" name="lastname" required>
+			</li>
+            <li>
+                Enter gender : <input type="radio" name="gender" value="male" required> Male
+                               <input type="radio" name="gender" value="female"required> Female
+                               <input type="radio" name="gender" value="other"required> Other  
+            </li>
+            <li>
+				Enter your email :	<input type="email" name="email" required>
+            </li>
+            <li>
+                Enter your phonenumber : <input type="number" name = "number" required>
+            </li>
+            <li>
+                Enter your date of birth : <input type="date" name = "dob" required>
+            </li>
+            <li>
+                Enter your address : <input type ="text" name = "address">
+            </li>
+            <li>
+                Enter your completed graduation year : <input type="number" name ="year" required>
+            </li>
+            <li>
+                Enter your college name : <input type ="text" name ="college name" required>
+            </li>
+            <li>
+                Enter your Branch :
+                <select >
+                 <option value = "" ></option>
+                 <option value = "CSE">CSE</option>
+                 <option value = "ECE">ECE</option>
+                 <option value = "MECHANICAl">MECHANICAL</option> 
+                 <option value = "CIVIL">CIVIL</option>
+                 <option value = "EEE">EEE</option>
+                 <option value = "IT">IT</option>
+                </select>
+            <li>
+                Enter your graduation percentage : <input type="number" name ="percentage" required>
+            </li>
+            </li>
+            <li>
+                <input type="checkbox" required>I agree that above mentioned information is correct.
+            </li>
+            <li>
+				<input type="submit" formaction="abc.com" formnovalidate formenctype="multipart/form-data" formmethod=" post" value="SUBMIT">
+			</li>
+		</ul>
+	</form>
+
+</body>
+</html>
